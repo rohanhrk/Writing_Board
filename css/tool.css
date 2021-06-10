@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    /* overflow: hidden; */
+    /* cursor: url("draw.png"),auto; */
+     overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: gray; */
+    display: flex;
+   
+}
+
+/* ============================================================ tool ============================================================ */
+.tool-container {
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 4rem;
+    background-color: #222b32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+.tool:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+}
+.tool {
+    border-top: 0.5px solid #c0c0c036;
+    height: 7%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu {
+    color: lightgray;
+}
+.pencil {
+    font-size: x-large;
+    color: lightgray;
+}
+.eraser {
+    font-size: xx-large;
+    color: lightgray;
+}
+.text {
+    font-size: xx-large;
+    color: lightgray;
+}
+
+.zoom-in,.zoom-out {
+    color: lightgray;
+}
+.screen-present,.video-camera {
+    color: lightgray;
+}
+.effect {
+    color: lightgray;
+    border-bottom:  0.5px solid #c0c0c036;
+}
+.full-screen {
+    border-bottom: 0.5px solid #c0c0c036;
+    color: silver;
+}
+.gallery {
+    border-bottom: 1px solid #c0c0c036;
+    color: silver;
+}
+
+/* ============================================================ Tool bar ============================================================ */
+.tool-bar-container {
+    width: 12rem;
+    height: 81%;
+    position: absolute;
+    top: 15.1%;
+    left: 70px;
+    display: none;
+}
+
+.menu-bar {
+    display: none;
+    height: 17.3%;
+    background-color: #222b32;
+    position: absolute;
+    width: 30%;
+    z-index: 8;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px 4px #00000070;
+    box-shadow: darkgray;
+}
+#nos {
+    height: calc( 100% / 2 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: lightblue;
+}
+.pencil-bar {
+    display: none;
+    border: 1px solid rgb(86, 82, 82);
+    height: 35%;
+    position: absolute;
+    width: 100%;
+    top: 8.7%;
+    left: 0;
+    background-color: #222b32;
+    box-shadow: 10px 10px 10px 4px #00000070;
+    z-index: 2;
+    border-radius: 9px;
+    padding: 2%;
+}
+.slidecontainer {
+    height: 14%;
+    width: 97%;
+    margin: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #30475933;
+    margin-left: 2%;
+    border-radius: 8px;
+}
+.slider {
+    width: 80%;
+}
+.show-size {
+    width: 11%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+
+}
+.color-box {
+    height: 76%;
+    margin: 1%;
+    background-color: #a1909014;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 8px;
+}
+.box-row {
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:1.5rem;
+    width: 1.5rem;
+}
+.box-col {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.eraser-bar {
+    display: none;
+    position: absolute;
+    width: 92%;
+    height: 8.6%;
+    top: 17.3%;
+    background-color: #222b32;
+    z-index: 3;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 4px #00000070;
+}
+.eraserSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-bar {
+    display: none;
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    top: 24.7%;
+    height: 33.3%;
+    z-index: 4;
+    background-color: #d3d3d373;
+}
+.screen-present-bar {
+    display: none;
+    background-color: #222b32;
+    color: silver;
+    height: 6.7rem;
+    width: 30%;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 3;
+    top: 43.2%;
+    box-shadow: 10px 10px 10px 4px #00000070;
+}
+#screen {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.onshare{
+    font-size: xx-large;
+}
+.effect-bar {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    border-radius: 8px;
+    width: 100%;
+    height: 17%;
+    top: 60.5%;
+    background-color: #222b32;
+    box-shadow: 10px 10px 10px 4px #00000070;
+}
+.effect-row {
+    height: 50%;
+    display: flex;
+}
+.effect-col {
+    width: calc( 100%/3 );
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#color {
+    height: 78%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+
+/* ============================================================ canvas container ============================================================ */
+.canvas-container {
+    height: 100%;
+}
+
+/* ============================================================ active ============================================================  */
+.active {
+    display: block;
+}
+.active-btn {
+    background-color: #125d98;
+}
+
+
+.video-container{
+    position: absolute;
+    right: 0%;
+    width: 11rem;
+    height: 10rem;
+}

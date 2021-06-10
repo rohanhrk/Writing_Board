@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY GALLERY</title>
+  <link rel="stylesheet" href="./css/mygallery.css" />
+</head>
+<!-- C6.5  -->
+
+<body style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #222b32;
+    ">
+  <!-- C6.1.A  -->
+  <button class="gallery-back" onclick="">BACK</button>
+  <script src="./js/indexDB.js"></script>
+  <script>
+    //  C6.1.B
+    let backBtn = document.querySelector(".gallery-back");
+    backBtn.addEventListener("click", function () {
+      location.assign("index.html");
+    });
+    setTimeout(function () {
+      viewMedia();
+    }, 100);
+  </script>
+</body>
+
+</html>

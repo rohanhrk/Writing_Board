@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/tool.css">
+    <link rel="stylesheet" href="./css/colorlist.css">
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="tool-container">
+            <div class="tool menu">
+                <span class="material-icons-outlined material-icons menu">
+                    home
+                </span>
+            </div>
+
+            <div class="tool pencil">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="tool eraser">
+                <i class="fas fa-eraser"></i>
+            </div>
+
+
+            <div class="tool zoom-in">
+                <span class="material-icons-outlined material-icons">
+                    zoom_in
+                </span>
+            </div>
+            <div class="tool zoom-out">
+                <span class="material-icons-outlined material-icons">
+                    zoom_out
+                </span>
+            </div>
+
+            <div class="tool screen-present">
+                <span class="material-icons-outlined material-icons">
+                    present_to_all
+                </span>
+            </div>
+            <div class="tool video-camera">
+                <span class="material-icons-outlined material-icons">
+                    video_camera_front
+                </span>
+            </div>
+            <div class="tool effect">
+                <span class="material-icons-outlined material-icons">
+                    light_mode
+                </span>
+            </div>
+            <div class="tool full-screen">
+                <span class="material-icons-outlined material-icons expand-btn">
+                    fullscreen
+                </span>
+            </div>
+            <div class="tool gallery">
+                <!-- C5.1.A  -->
+                <div id="gallery-button">
+                    <span class="material-icons" style="font-size: 2rem; color: white">
+                        photo
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tool-bar-container">
+            <div class="toolbar menu-bar">
+                <div class="new" id="nos">
+                    <i class="fas fa-file"></i>
+                </div>
+
+                <div class="save" id="nos">
+                    <span class="material-icons-outlined material-icons">
+                        save
+                    </span>
+                </div>
+            </div>
+            <div class="toolbar pencil-bar">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                    <div class="show-size pencilThicknes">1</div>
+                </div>
+                <div class="color-box">
+                    <!-- colorBox.js -->
+                </div>
+            </div>
+            <div class="toolbar eraser-bar">
+                <div class="eraserSlider">
+                    <input type="range" min="1" max="50" value="1" class="eraser-slider" id="eraserRange">
+                    <div class="show-size eraserThicknes">1</div>
+
+                </div>
+            </div>
+
+            <div class="toolbar zoomin-bar">
+
+            </div>
+            <div class="toolbar zoomout-bar">
+
+            </div>
+            <div class="toolbar screen-present-bar">
+                <div class="screen-share" id="screen">
+                    <span class="material-icons-outlined material-icons onshare">
+                        screen_share
+                    </span>
+                </div>
+
+                <div class="stop-screen-share" id="screen">
+                    <span class="material-icons-outlined material-icons">
+                        stop_screen_share
+                    </span>
+                </div>
+
+            </div>
+            <div class="toolbar redo-bar">
+
+            </div>
+            <div class="toolbar effect-bar">
+                <div class="effect-row">
+                    <div class="effect-col">
+                        <div class="color black1 black" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color purple #8458B3" id="color"> </div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color blue #004E7C" id="color"></div>
+                    </div>
+                </div>
+                <div class="effect-row">
+                    <div class="effect-col">
+                        <div class="color nightBlue #2d545e" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color green #266150" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color blush #E8CEBF" id="color"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar expand-bar"></div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas class="canvas"></canvas>
+        </div>
+
+        <div class="video-container">
+            <video src="video" autoplay></video>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="./js/tool.js"></script>
+    <script src="./js/colorBox.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/image.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/expandScreen.js"></script>
+    <script src="./js/strem.js"></script>
+    <script src="./js/indexDB.js"></script>
+    <script>
+        // C5.1.B
+        let galleryBtn = document.querySelector("#gallery-button");
+        // The onclick handler uses location object and change it from index.html to gallery.html in the same domain
+        galleryBtn.addEventListener("click", function () {
+            location.assign("myGallery.html");
+        });
+    </script>
+</body>
+
+</html>
