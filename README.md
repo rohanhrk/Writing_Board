@@ -2,7 +2,7 @@
 
 I have made a web-based writing board application using HTML, CSS, JavaScript, Browser APIs and implemented its own gallery.
 
-#Features
+# Features
 
 1. pencil and eraser tool helps to draw on the canvas and erase.
 2. Canvas can be zoomed in or out.
@@ -10,7 +10,7 @@ I have made a web-based writing board application using HTML, CSS, JavaScript, B
 4. User can delete or download the recorded video from the gallery.
 5. Can change the theme of the canvas.
 
-#Learnings
+# Learnings
 
 1. Implementation of IndexDB
 2. learn various APIs
