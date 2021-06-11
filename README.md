@@ -14,3 +14,10 @@ I have made a web-based writing board application using HTML, CSS, JavaScript, B
 
 1. Implementation of IndexDB
 2. learn various APIs
+
+# technology
+HTML
+CSS
+JavaScript
+IndexDB
+Browser APIs
