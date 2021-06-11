@@ -16,8 +16,14 @@ I have made a web-based writing board application using HTML, CSS, JavaScript, B
 2. learn various APIs
 
 # technology
-HTML
-CSS
-JavaScript
-IndexDB
-Browser APIs
+1. HTML,
+2. CSS,
+3. JavaScript,
+4. IndexDB,
+5. Browser APIs
+
+# ScreenShot
+
+1. Canvas Board
+![Screenshot (104)](https://user-images.githubusercontent.com/72231697/121644235-66a3d580-cab0-11eb-8d77-844ea96a1327.png)
+
