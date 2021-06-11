@@ -25,5 +25,11 @@ I have made a web-based writing board application using HTML, CSS, JavaScript, B
 # ScreenShot
 
 1. Canvas Board
+
 ![Screenshot (104)](https://user-images.githubusercontent.com/72231697/121644235-66a3d580-cab0-11eb-8d77-844ea96a1327.png)
+
+2. Gallery
+
+![Screenshot (103)](https://user-images.githubusercontent.com/72231697/121644339-8509d100-cab0-11eb-9da5-3d207724018a.png)
+
 
